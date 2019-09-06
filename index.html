@@ -4,156 +4,468 @@
 <head>
     <!-- Required meta tags -->
     <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <meta name="description" content="">
-    <meta name="author" content="">
+    <!--    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">-->
+    <!--    <meta name="description" content="">-->
+    <!--    <meta name="author" content="">-->
     <link rel="icon" href="../../../../favicon.ico">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Responsive Resume Template">
+    <meta name="author" content="Xiaoying Riley at 3rd Wave Media">
+    <!--    <link rel="shortcut icon" href="favicon.ico">-->
 
     <title>Resume</title>
 
     <!-- Bootstrap core CSS -->
-    <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.1/css/bootstrap.min.css" />
-    <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css" />
+    <script src="https://kit.fontawesome.com/068546a344.js"></script>
+    <meta http-equiv="x-ua-compatible" content="ie=edge"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1"/>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css"
+          integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
+    <!-- Google Font -->
+    <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700,900" rel="stylesheet">
+
+    <!-- FontAwesome JS-->
+    <script defer src="https://use.fontawesome.com/releases/v5.1.1/js/all.js"
+            integrity="sha384-BtvRZcyfv4r0x/phJt9Y9HhnN5ur1Z+kZbKVgzVBAlQZX4jvAuImlIz+bG7TS00a"
+            crossorigin="anonymous"></script>
+
+    <!-- Theme CSS -->
+    <link id="theme-style" rel="stylesheet" href="css/pillar-1.css">
 
     <!-- Custom styles for this template -->
 
-    <style type="text/css" media="screen">
-        body {
-            font-family: arial;
-        }
 
-        h1,
-        h2 {
-            font-family: arial;
-            text-align: center;
-            text-decoration: underline;
-
-        }
-
-        .header {
-            grid-area: header;
-        }
-
-        .nav {
-            grid-area: nav;
-            text-align: right;
-        }
-
-        #introduction {
-            grid-area: intro;
-        }
-
-        #skills {
-            grid-area: skills;
-        }
-
-        .left {
-            grid-area: left;
-        }
-
-        .center-l {
-            background-color: dodgerblue;
-            grid-area: center-l;
-        }
-
-        .center-r {
-            grid-area: center-r;
-        }
-
-        .right {
-            grid-area: right;
-        }
-
-        #contact {
-            grid-area: footer;
-
-        }
-
-        p {
-            text-align: left;
-        }
-    </style>
 </head>
 
 
 <body>
-    <div class="container-fluid">
-        <nav class="nav">
-            <a href="#introduction">About Me</a>
-            <a href="#portfolio">Portfolio</a>
-            <a href="#contact">Contact</a>
-        </nav>
-        <div id="introduction">
-            <h2>About me</h2><br>
-            <p> Top 5 (Gallup) strengths: strategic, responsibility, learner, positive attitude, and focus. <br />
-                Software Developer with 10+ years of experience in the desktop applications, multi-tier applications, and reports. 
-                Trained in React, Node.
-            </p>
-        </div>
-        <div id="skills">
-            <h2>Skill set</h2>
-        </div>
-        <div class="row">
-            <div class="col-sm-3">
-                <strong>Programming principles: </strong><br>
-                <ul>
-                    <li>Top Down Design</li>
-                    <li> Object Oriented (OOA+)</li>
-                    <li> Data Structures</li>
-                    <li>Algorithms</li>
-                   
-                </ul>
-            </div>
-            <div class="col-sm-3">
-                <strong>Languages, Development tools:</strong>
-                <ul>
-                    <li>JavaScript</li>
-                    <li>HTML</li>
-                    <li> CSS</li>
-                    <li>React</li>
-                    <li>Web Services</li>
-                    <li>NodeJS</li>
-                    <li>Java</li>
-                    <li>ASP.NET</li>
-                    <li>VB.NET</li>
-                    <li> ADO.Net</li>
-                    <li>C#</li>
-                    <li>Angular</li>
-                </ul>
-            </div>
-                    
-            <div class="col-sm-3">
-                <strong>Databases: </strong>
-                <ul>
-                    <li>ORACLE</li>
-                    <li>MySQL</li>
-                </ul>
-            </div>
-        </div>
-        
-        <h2 class="header" id="portfolio">Portfolio</h2>
-        <ul>
-            <li>naming_contest (Mongo, ExpressJS, React, NodeJS)<br>
-                Fullstack application with MongoDB for the database, using Node as both an API server on top of that database, 
-                and as a web server to host all of our assets and use React on the front end to consume our API data and build 
-                a user interface suitable for the features of our application.
-            </li>
-            <li>Quiz (Angular, ASP.NET Core 2.0) <br>
-               Full stack application with Angular, ASP.NET Core 2.0, and focus on Entity Framework Core 2.0. 
-               Entity Framework is an object-relational mapper, or ORM that allows developers to work with relational data 
-               using domain-specific objects. It eliminates the need for most of the data access code that developers usually 
-               need to write. The simple idea is that we create objects that will give us access to the data in our database.  
-            </li>
-        </ul>
-       <h2 class="header" id="contact">Contact Information</h2>            
-            <p><a href="https://www.linkedin.com/in/gloria-laura-vela//" target="_blank"> LinkedIn</a></p>
-            <p>Free Code camp</p>
-        
+<article class="resume-wrapper text-center position-relative">
+    <div class="resume-wrapper-inner mx-auto text-left bg-white shadow-lg">
+        <header class="resume-header pt-4 pt-md-0">
+            <div class="media flex-column flex-md-row">
+                <img class="mr-3 img-fluid picture mx-auto" src="images/profile.jpeg" alt="">
+                <div class="media-body p-4 d-flex flex-column flex-md-row mx-auto mx-lg-0">
+                    <div class="primary-info">
+                        <h1 class="name mt-0 mb-1 text-white text-uppercase text-uppercase">Gloria Laura Vela</h1>
+                        <div class="title mb-3">Full Stack Developer</div>
+                        <ul class="list-unstyled">
+                            <li class="mb-2"><a href="#"><i class="far fa-envelope fa-fw mr-2"
+                                                            data-fa-transform="grow-3"></i>gloria.laura.vela@gmail.com</a>
+                            </li>
+                            <li><a href="#"><i class="fas fa-mobile-alt fa-fw mr-2" data-fa-transform="grow-6"></i>210
+                                862 0693</a></li>
+                        </ul>
+                    </div><!--//primary-info-->
+                    <div class="secondary-info ml-md-auto mt-2">
+                        <ul class="resume-social list-unstyled">
+                            <li class="mb-3"><a href="#"><span class="fa-container text-center mr-2"><i
+                                    class="fab fa-linkedin-in fa-fw"></i></span><a
+                                    href="https://www.linkedin.com/in/gloria-laura-vela" target="_blank"> Gloria Laura
+                                Vela</a></li>
+                            <li class="mb-3"><a href="#"><span class="fa-container text-center mr-2"><i
+                                    class="fab fa-github-alt fa-fw"></i></span>github.com/gloriaLVela</a></li>
+                            <li class="mb-3"><a href="#"><span class="fa-container text-center mr-2"><i
+                                    class="fab fa-codepen fa-fw"></i></span>codepen.io/username/</a></li>
+                            <li><a href="#"><span class="fa-container text-center mr-2"><i
+                                    class="fas fa-globe"></i></span>yourwebsite.com</a></li>
+                        </ul>
+                    </div><!--//secondary-info-->
+
+                </div><!--//media-body-->
+            </div><!--//media-->
+        </header>
+        <div class="resume-body p-5">
+            <section class="resume-section summary-section mb-5">
+                <h2 class="resume-section-title text-uppercase font-weight-bold pb-3 mb-3">Career Summary</h2>
+                <div class="resume-section-content">
+                    <p class="mb-0">Top 5 (Gallup) strengths: strategic, responsibility, learner, positive attitude, and
+                        focus. <br/>
+                        Software Developer with 10+ years of experience in the desktop applications, multi-tier
+                        applications, and
+                        reports.
+                        Trained in React, Node.</p>
+                </div>
+            </section><!--//summary-section-->
+            <div class="row">
+                <div class="col-lg-9">
+                    <section class="resume-section experience-section mb-5">
+                        <h2 class="resume-section-title text-uppercase font-weight-bold pb-3 mb-3">Work Experience</h2>
+                        <div class="resume-section-content">
+                            <div class="resume-timeline position-relative">
+                                <article class="resume-timeline-item position-relative pb-5">
+
+                                    <div class="resume-timeline-item-header mb-2">
+                                        <div class="d-flex flex-column flex-md-row">
+                                            <h3 class="resume-position-title font-weight-bold mb-1">Student</h3>
+                                            <div class="resume-company-name ml-auto">Codeup</div>
+                                        </div><!--//row-->
+                                        <div class="resume-position-time">2019 - Present</div>
+                                    </div><!--//resume-timeline-item-header-->
+                                    <div class="resume-timeline-item-desc">
+                                        <p>This course of instruction prepares individuals for entry­-level jobs as
+                                            computer programmers, web developers, or software developers. Graduates may
+                                            find suitable employment within information technology at various employers,
+                                            such as tech startups, web development/design firms, marketing firms, or in
+                                            the web/software development departments of large businesses. Students will
+                                            learn to develop, design, deploy, and manage their own web applications.
+                                            Upon completion of this program, students will be able to work in a
+                                            collaborative team environment using modern web and programming technologies
+                                            in the MySQL, Java, JavaScript, jQuery and HTML/CSS technology areas.</p>
+                                        <h4 class="resume-timeline-item-desc-heading font-weight-bold">
+                                            Achievements:</h4>
+                                        <p>Completed projects.</p>
+                                        <ul>
+                                            <li>Pizza.</li>
+                                            <li>Weather map.</li>
+                                            <li>Coffee project.</li>
+                                            <li>Personal website.</li>
+                                        </ul>
+                                        <h4 class="resume-timeline-item-desc-heading font-weight-bold">Technologies
+                                            used:</h4>
+                                        <ul class="list-inline">
+                                            <li class="list-inline-item"><span class="badge badge-primary badge-pill">Javascript</span>
+                                            </li>
+                                            <li class="list-inline-item"><span class="badge badge-primary badge-pill">HTML/CSS</span>
+                                            </li>
+                                            <li class="list-inline-item"><span class="badge badge-primary badge-pill">jQuery</span>
+                                            </li>
+                                            <li class="list-inline-item"><span class="badge badge-primary badge-pill">Webpack</span>
+                                            </li>
+                                            <li class="list-inline-item"><span class="badge badge-primary badge-pill">Java</span>
+                                            </li>
+                                            <li class="list-inline-item"><span class="badge badge-primary badge-pill">MySQL</span>
+                                            </li>
+                                        </ul>
+                                    </div><!--//resume-timeline-item-desc-->
+
+                                </article><!--//resume-timeline-item-->
+
+                                <article class="resume-timeline-item position-relative pb-5">
+
+                                    <div class="resume-timeline-item-header mb-2">
+                                        <div class="d-flex flex-column flex-md-row">
+                                            <h3 class="resume-position-title font-weight-bold mb-1">Technical
+                                                Specialist</h3>
+                                            <div class="resume-company-name ml-auto">Southwest Research Institute
+                                            </div>
+                                        </div><!--//row-->
+                                        <div class="resume-position-time">1999 - 2017</div>
+                                    </div><!--//resume-timeline-item-header-->
+                                    <div class="resume-timeline-item-desc">
+                                        <p>Advanced through several promotions, culminating in Technical Assistant
+                                            role.</p>
+                                        <p>
+                                            Student Technician, 1999 - 2000; Programmer, 2000 - 2003; Senior Programmer,
+                                            2003 - 2006; Programmer/Analyst, 2006 - 2007; Technical Assistant, 2007 -
+                                            2010; Associate Technical Specialist, 2010 - 2012; Technical Specialist,
+                                            2012 – 2017.
+                                        </p>
+
+                                        <p>Designed, implemented, tested, enhanced and maintained Client/Server
+                                            applications, Web applications (3-Tier), programming tools, reports, and
+                                            electronic forms to close the gap between Costpoint (project accounting
+                                            software package sold by Deltek) and the user’s needs.
+                                            .</p>
+                                        <h4 class="resume-timeline-item-desc-heading font-weight-bold">Achievements</h4>
+                                        <p>
+                                        <li><strong>STRATEGIC:</strong> Created a programming tool, which standardizes
+                                            the appearance of
+                                            end user searches, and expedites development (estimated 3,360 hours).
+                                        </li>
+                                        <li><strong>RESOURCEFUL:</strong> Employed a variety of technologies such as
+                                            VB.Net, excel
+                                            macros, crystal reports, Oracle procedures, and Oracle packages to generate
+                                            customized spreadsheets and reports, which resulted in estimated savings
+                                            over 2,500 hours a year of personnel time.
+                                        </li>
+                                        <li><strong>CUSTOMER ORIENTED:</strong> Generated a client-side reporting
+                                            system, which saves
+                                            1,500 hours a year of management level time.
+                                        </li>
+                                        <li><strong>PROBLEM SOLVER:</strong> Produced reporting systems, which reduced
+                                            the process time
+                                            from one week to one click and eliminated software developer time.
+                                        </li>
+                                        <li><strong>PROACTIVE:</strong> Migrated 6,098 user records and cleaned 4,192
+                                            records to be used
+                                            in a Drupal application (Web Content Management).
+                                        </li>
+
+                                        </p>
+                                        <h4 class="resume-timeline-item-desc-heading font-weight-bold">Technologies
+                                            used:</h4>
+                                        <ul class="list-inline">
+                                            <li class="list-inline-item"><span class="badge badge-primary badge-pill">Algorithms</span>
+                                            </li>
+                                            <li class="list-inline-item"><span class="badge badge-primary badge-pill">Oracle</span>
+                                            </li>
+                                            <li class="list-inline-item"><span class="badge badge-primary badge-pill">JavaScript</span>
+                                            </li>
+                                            <li class="list-inline-item"><span class="badge badge-primary badge-pill">HTML</span>
+                                            </li>
+                                            <li class="list-inline-item"><span class="badge badge-primary badge-pill">CSS</span>
+                                            </li>
+                                            <li class="list-inline-item"><span class="badge badge-primary badge-pill">ASP.Net</span>
+                                            </li>
+                                            <li class="list-inline-item"><span class="badge badge-primary badge-pill">VB.Net</span>
+                                            </li>
+                                            <li class="list-inline-item"><span class="badge badge-primary badge-pill">ADO.Net</span>
+                                            </li>
+                                            <li class="list-inline-item"><span class="badge badge-primary badge-pill">BIRT</span>
+                                            </li>
+                                            <li class="list-inline-item"><span class="badge badge-primary badge-pill">Crystal Reports</span>
+                                            </li>
+                                        </ul>
+                                    </div><!--//resume-timeline-item-desc-->
+
+                                </article><!--//resume-timeline-item-->
+
+                                <article class="resume-timeline-item position-relative pb-5">
+
+                                    <div class="resume-timeline-item-header mb-2">
+                                        <div class="d-flex flex-column flex-md-row">
+                                            <h3 class="resume-position-title font-weight-bold mb-1">Application Developer <small class="text-muted">(Consultant)</small></h3>
+                                            <div class="resume-company-name ml-auto">Ford Motor Company</div>
+                                        </div><!--//row-->
+                                        <div class="resume-position-time">1986-1988</div>
+                                    </div><!--//resume-timeline-item-header-->
+                                    <div class="resume-timeline-item-desc">
+                                        <p>Enhanced and maintained (team leader/team member) Ford's CAD/CAM (PDGS) system.</p>
+                                        <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo
+                                            ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis
+                                            parturient montes.</p>
+                                        <h4 class="resume-timeline-item-desc-heading font-weight-bold">Technologies
+                                            used:</h4>
+                                        <ul class="list-inline">
+                                            <li class="list-inline-item"><span class="badge badge-primary badge-pill">Algorithms</span>
+                                            </li>
+                                            <li class="list-inline-item"><span class="badge badge-primary badge-pill">Top Down Design</span>
+                                            </li>
+                                            <li class="list-inline-item"><span class="badge badge-primary badge-pill">Waterfall</span>
+                                            </li>
+                                            <li class="list-inline-item"><span class="badge badge-primary badge-pill">Fortran</span>
+                                            </li>
+                                        </ul>
+                                    </div><!--//resume-timeline-item-desc-->
+
+                                </article><!--//resume-timeline-item-->
+
+                                <article class="resume-timeline-item position-relative">
+
+                                    <div class="resume-timeline-item-header mb-2">
+                                        <div class="d-flex flex-column flex-md-row">
+                                            <h3 class="resume-position-title font-weight-bold mb-1">System Analyst <small class="text-muted">(Consultant)</small>
+                                            </h3>
+                                            <div class="resume-company-name ml-auto">General Motors</div>
+                                        </div><!--//row-->
+                                        <div class="resume-position-time">1984 - 1986</div>
+                                    </div><!--//resume-timeline-item-header-->
+                                    <div class="resume-timeline-item-desc">
+                                        <p>
+
+                                            Enhanced and maintained GM's CAD/CAM (CGS) system.
+                                        </p>
+                                        <h4 class="resume-timeline-item-desc-heading font-weight-bold">Technologies
+                                            used:</h4>
+                                        <ul class="list-inline">
+                                            <li class="list-inline-item"><span class="badge badge-primary badge-pill">Algorithms</span>
+                                            </li>
+                                            <li class="list-inline-item"><span class="badge badge-primary badge-pill">Top Down Design</span>
+                                            </li>
+                                            <li class="list-inline-item"><span class="badge badge-primary badge-pill">Waterfall</span>
+                                            </li>
+                                            <li class="list-inline-item"><span class="badge badge-primary badge-pill">PL1</span>
+                                            </li>
+                                        </ul>
+                                    </div><!--//resume-timeline-item-desc-->
+
+                                </article><!--//resume-timeline-item-->
+
+
+                            </div><!--//resume-timeline-->
+
+
+                        </div>
+                    </section><!--//experience-section-->
+                </div>
+                <div class="col-lg-3">
+                    <section class="resume-section skills-section mb-5">
+                        <h2 class="resume-section-title text-uppercase font-weight-bold pb-3 mb-3">Skills &amp;
+                            Tools</h2>
+                        <div class="resume-section-content">
+                            <div class="resume-skill-item">
+                                <ul class="list-unstyled mb-4">
+                                    <li class="mb-2">
+                                        <div class="resume-skill-name">JavaScript</div>
+                                        <div class="progress resume-progress">
+                                            <div class="progress-bar theme-progress-bar-dark" role="progressbar"
+                                                 style="width: 98%" aria-valuenow="25" aria-valuemin="0"
+                                                 aria-valuemax="100"></div>
+                                        </div>
+                                    </li>
+                                    <li class="mb-2">
+                                        <div class="resume-skill-name">HTML/CSS</div>
+                                        <div class="progress resume-progress">
+                                            <div class="progress-bar theme-progress-bar-dark" role="progressbar"
+                                                 style="width: 94%" aria-valuenow="25" aria-valuemin="0"
+                                                 aria-valuemax="100"></div>
+                                        </div>
+                                    </li>
+                                    <li class="mb-2">
+                                        <div class="resume-skill-name">JQuery</div>
+                                        <div class="progress resume-progress">
+                                            <div class="progress-bar theme-progress-bar-dark" role="progressbar"
+                                                 style="width: 96%" aria-valuenow="25" aria-valuemin="0"
+                                                 aria-valuemax="100"></div>
+                                        </div>
+                                    </li>
+
+                                    <li class="mb-2">
+                                        <div class="resume-skill-name">Responsive Design</div>
+                                        <div class="progress resume-progress">
+                                            <div class="progress-bar theme-progress-bar-dark" role="progressbar"
+                                                 style="width: 92%" aria-valuenow="25" aria-valuemin="0"
+                                                 aria-valuemax="100"></div>
+                                        </div>
+                                    </li>
+                                    <li class="mb-2">
+                                        <div class="resume-skill-name">Oracle</div>
+                                        <div class="progress resume-progress">
+                                            <div class="progress-bar theme-progress-bar-dark" role="progressbar"
+                                                 style="width: 96%" aria-valuenow="25" aria-valuemin="0"
+                                                 aria-valuemax="100"></div>
+                                        </div>
+                                    </li>
+
+                                    <li class="mb-2">
+                                        <div class="resume-skill-name">MySQL</div>
+                                        <div class="progress resume-progress">
+                                            <div class="progress-bar theme-progress-bar-dark" role="progressbar"
+                                                 style="width: 95%" aria-valuenow="25" aria-valuemin="0"
+                                                 aria-valuemax="100"></div>
+                                        </div>
+                                    </li>
+                                    <li class="mb-2">
+                                        <div class="resume-skill-name">API</div>
+                                        <div class="progress resume-progress">
+                                            <div class="progress-bar theme-progress-bar-dark" role="progressbar"
+                                                 style="width: 92%" aria-valuenow="25" aria-valuemin="0"
+                                                 aria-valuemax="100"></div>
+                                        </div>
+                                    </li>
+                                    <li class="mb-2">
+                                        <div class="resume-skill-name">Unit Testing</div>
+                                        <div class="progress resume-progress">
+                                            <div class="progress-bar theme-progress-bar-dark" role="progressbar"
+                                                 style="width: 86%" aria-valuenow="25" aria-valuemin="0"
+                                                 aria-valuemax="100"></div>
+                                        </div>
+                                    </li>
+
+                                </ul>
+                            </div><!--//resume-skill-item-->
+
+                            <div class="resume-skill-item">
+                                <h4 class="resume-skills-cat font-weight-bold">Others</h4>
+                                <ul class="list-inline">
+                                    <li class="list-inline-item"><span class="badge badge-light">DevOps</span></li>
+                                    <li class="list-inline-item"><span class="badge badge-light">Code Review</span></li>
+                                    <li class="list-inline-item"><span class="badge badge-light">Git</span></li>
+                                    <li class="list-inline-item"><span class="badge badge-light">Unit Testing</span>
+                                    </li>
+                                    <li class="list-inline-item"><span class="badge badge-light">Algorithms</span></li>
+                                    <li class="list-inline-item"><span class="badge badge-light">Top Down Design</span></li>
+                                    <li class="list-inline-item"><span class="badge badge-light">Waterfall</span></li>
+                                    <li class="list-inline-item"><span class="badge badge-light">SDLC</span></li>
+<!--                                    <li class="list-inline-item"><span class="badge badge-light">Shopify</span></li>-->
+                                </ul>
+                            </div><!--//resume-skill-item-->
+                        </div><!--resume-section-content-->
+                    </section><!--//skills-section-->
+                    <section class="resume-section education-section mb-5">
+                        <h2 class="resume-section-title text-uppercase font-weight-bold pb-3 mb-3">Education</h2>
+                        <div class="resume-section-content">
+                            <ul class="list-unstyled">
+                                <li class="mb-2">
+                                    <div class="resume-degree font-weight-bold">Bachelor of Science in Computer Science
+                                        - Degree validated by the Foreign Credential Service of America
+                                    </div>
+                                    <div class="resume-degree-org">Universidad Autónoma de Nuevo León, San Nicolás De
+                                        Los Garza, Nuevo León, México
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="resume-degree font-weight-bold">Associate of Applied Science in Computer
+                                        Programming
+                                    </div>
+                                    <div class="resume-degree-org">San Antonio College (SAC), San Antonio, Texas</div>
+                                </li>
+                            </ul>
+                        </div>
+                    </section><!--//education-section-->
+                    <section class="resume-section reference-section mb-5">
+                        <h2 class="resume-section-title text-uppercase font-weight-bold pb-3 mb-3">Awards</h2>
+                        <div class="resume-section-content">
+                            <ul class="list-unstyled resume-awards-list">
+                                <li class="mb-2 pl-4 position-relative">
+                                    <i class="resume-award-icon fas fa-trophy position-absolute"
+                                       data-fa-transform="shrink-2"></i>
+                                    <div class="resume-award-name">AITP (Association of Information Technology
+                                        Professionals) National Contest: Systems Analysis and Design, 3rd Place
+                                    </div>
+                                    <div class="resume-award-desc">AITP (Association of Information Technology
+                                        Professionals) National Contest: Systems Analysis and Design, 3rd Place
+                                    </div>
+                                </li>
+                                <li class="mb-0 pl-4 position-relative">
+                                    <i class="resume-award-icon fas fa-trophy position-absolute"
+                                       data-fa-transform="shrink-2"></i>
+                                    <div class="resume-award-name">AITP National Contest: Student Paper, 3rd Place</div>
+                                    <div class="resume-award-desc">AITP National Contest: Student Paper, 3rd Place.
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                    </section><!--//interests-section -->
+                    <section class="resume-section language-section mb-5">
+                        <h2 class="resume-section-title text-uppercase font-weight-bold pb-3 mb-3">Language</h2>
+                        <div class="resume-section-content">
+                            <ul class="list-unstyled resume-lang-list">
+                                <li class="mb-2"><span class="resume-lang-name font-weight-bold">English</span>
+                                    <small class="text-muted font-weight-normal">(100%)</small>
+                                </li>
+                                <li><span class="resume-lang-name font-weight-bold">Spanish</span>
+                                    <small class="text-muted font-weight-normal">(100%)</small>
+                                </li>
+                            </ul>
+                        </div>
+                    </section><!--//language-section-->
+                    <section class="resume-section interests-section mb-5">
+                        <h2 class="resume-section-title text-uppercase font-weight-bold pb-3 mb-3">Interests</h2>
+                        <div class="resume-section-content">
+                            <ul class="list-unstyled">
+                                <li class="mb-1">Cooking</li>
+                                <li class="mb-1">Yoga</li>
+                            </ul>
+                        </div>
+                    </section><!--//interests-section-->
+
+                </div>
+            </div><!--//row-->
+        </div><!--//resume-body-->
+
+
     </div>
-    
-    <!-- Optional JavaScript -->
-    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
-    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js" integrity="sha384-wHAiFfRlMFy6i5SRaxvfOCifBUQy1xHdJ/yoi7FRNXMRBu5WHdZYu1hA6ZOblgut" crossorigin="anonymous"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js" integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k" crossorigin="anonymous"></script></body>
+</article>
+
+
+<footer class="footer text-center pt-2 pb-5">
+    <!--/* This template is released under the Creative Commons Attribution 3.0 License. Please keep the attribution link below when using for your own project. Thank you for your support. :) If you'd like to use the template without the attribution, you can buy the commercial license via our website: themes.3rdwavemedia.com */-->
+    <small class="copyright">Designed with <i class="fas fa-heart"></i> by <a href="http://themes.3rdwavemedia.com"
+                                                                              target="_blank">Xiaoying Riley</a> for
+        developers
+    </small>
+</footer>
+
+</body>
 </html>
